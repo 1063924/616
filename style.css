@@ -1,0 +1,401 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Ranga&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 100;
+  position: relative;
+}
+
+body {
+  position: relative;
+  background-color: #fcf6ba;
+  box-sizing: border-box;
+  border-top: solid 30px #116584;
+  border-bottom: solid 30px #116584;
+  overflow: hidden;
+}
+
+.Top {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: #3e6e7f;
+  color: #ffffff;
+  border-radius: 30px 30px 225px 30px;
+  margin-top: -100px;
+  margin-left: -75px;
+  font-family: 'Ranga' , cursive;
+  box-shadow: 20px 25px 15px -15px rgba(0, 0, 0, 0.55);
+}
+.Top h1 {
+  margin-left: 95px;
+}
+.Top h3 {
+  margin-top: 10px;
+  margin-left: 90px;
+  font-size: 35px;
+  width: 100px;
+  line-height: 60px;
+}
+.Top h3 span {
+  background-color: pink;
+  font-size: 50px;
+}
+
+.Top:hover {
+  transform: translate(50px, 50px);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  padding: 0px 20px 30px 20px;
+  overflow: hidden;
+  background-color: #3e6e7f;
+  color: #fff;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 20px 25px 15px -15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+}
+.namecard hr {
+  border-color: #fff;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.namecard h2 {
+  font-size: 25px;
+}
+.namecard span {
+  font-size: 18px;
+}
+.namecard h5 {
+  font-size: 16px;
+  font-wgight: 400;
+}
+
+.namecard:hover {
+  transform: rotate(360deg) scale(2);
+  box-shadow: -20px -25px 15px -15px rgba(0, 0, 0, 0.5);
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+}
+@keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100%, 0px);
+  }
+  100% {
+    transform: translate(100px, 100%);
+  }
+}
+.allbub [class*='bub'] {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  animation: falling 3s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 42.4058891023%;
+  top: 79.8025517559%;
+  animation-delay: -0.1s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 48.6033470219%;
+  top: 75.6105031109%;
+  animation-delay: -0.2s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 55.4205523709%;
+  top: 74.0580705274%;
+  animation-delay: -0.3s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 55.3202902146%;
+  top: 41.9892058148%;
+  animation-delay: -0.4s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 89.8609502394%;
+  top: 23.0986609812%;
+  animation-delay: -0.5s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 77.6602810082%;
+  top: 18.1914481706%;
+  animation-delay: -0.6s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 3.1389078483%;
+  top: 84.5414174115%;
+  animation-delay: -0.7s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 76.0733013854%;
+  top: 49.0003876563%;
+  animation-delay: -0.8s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 4.2283905086%;
+  top: 12.8872788265%;
+  animation-delay: -0.9s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 57.3371336375%;
+  top: 78.7062180761%;
+  animation-delay: -1s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 20.8579153259%;
+  top: 82.4058831057%;
+  animation-delay: -1.1s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 8.7427911742%;
+  top: 22.0451675659%;
+  animation-delay: -1.2s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 60.4616038138%;
+  top: 8.862939115%;
+  animation-delay: -1.3s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 70.2129336338%;
+  top: 60.2277304734%;
+  animation-delay: -1.4s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 32.7664247763%;
+  top: 38.9130551217%;
+  animation-delay: -1.5s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 79.9069496049%;
+  top: 29.818243744%;
+  animation-delay: -1.6s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 88.6126937807%;
+  top: 30.5139011527%;
+  animation-delay: -1.7s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 0.6640528592%;
+  top: 43.6678892522%;
+  animation-delay: -1.8s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 23.6985211577%;
+  top: 3.687965161%;
+  animation-delay: -1.9s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 13.3758427798%;
+  top: 88.3917959631%;
+  animation-delay: -2s;
+}
+.allbub .bub21 {
+  position: absolute;
+  left: 63.1775179587%;
+  top: 16.4359306023%;
+  animation-delay: -42s;
+}
+.allbub .bub22 {
+  position: absolute;
+  left: 75.9350242983%;
+  top: -3.3788732215%;
+  animation-delay: -44s;
+}
+.allbub .bub23 {
+  position: absolute;
+  left: 19.6859599008%;
+  top: 78.3634464862%;
+  animation-delay: -46s;
+}
+.allbub .bub24 {
+  position: absolute;
+  left: 47.3182404803%;
+  top: 44.8148125466%;
+  animation-delay: -48s;
+}
+.allbub .bub25 {
+  position: absolute;
+  left: 5.8012680504%;
+  top: 34.3478768429%;
+  animation-delay: -50s;
+}
+.allbub .bub26 {
+  position: absolute;
+  left: 52.2594098428%;
+  top: 16.7865939597%;
+  animation-delay: -52s;
+}
+.allbub .bub27 {
+  position: absolute;
+  left: 0.7444586898%;
+  top: -2.6207979754%;
+  animation-delay: -54s;
+}
+.allbub .bub28 {
+  position: absolute;
+  left: 22.8827015423%;
+  top: 81.7507440829%;
+  animation-delay: -56s;
+}
+.allbub .bub29 {
+  position: absolute;
+  left: 82.1669403307%;
+  top: 27.2365917453%;
+  animation-delay: -58s;
+}
+.allbub .bub30 {
+  position: absolute;
+  left: 70.0351350002%;
+  top: 85.0533237191%;
+  animation-delay: -60s;
+}
+.allbub .bub31 {
+  position: absolute;
+  left: 26.2780775098%;
+  top: 13.9923587722%;
+  animation-delay: -62s;
+}
+.allbub .bub32 {
+  position: absolute;
+  left: 78.1736001275%;
+  top: 40.4992522655%;
+  animation-delay: -64s;
+}
+.allbub .bub33 {
+  position: absolute;
+  left: 3.7381397757%;
+  top: 84.9195747679%;
+  animation-delay: -66s;
+}
+.allbub .bub34 {
+  position: absolute;
+  left: 64.0365349372%;
+  top: 65.8659519746%;
+  animation-delay: -68s;
+}
+.allbub .bub35 {
+  position: absolute;
+  left: 53.1063390591%;
+  top: 9.5152456847%;
+  animation-delay: -70s;
+}
+.allbub .bub36 {
+  position: absolute;
+  left: 68.6465903516%;
+  top: 28.7818131335%;
+  animation-delay: -72s;
+}
+.allbub .bub37 {
+  position: absolute;
+  left: 63.6981812659%;
+  top: 27.9802996756%;
+  animation-delay: -74s;
+}
+.allbub .bub38 {
+  position: absolute;
+  left: 89.8417213229%;
+  top: 38.5310820445%;
+  animation-delay: -76s;
+}
+.allbub .bub39 {
+  position: absolute;
+  left: 69.0998627923%;
+  top: 46.3838767879%;
+  animation-delay: -78s;
+}
+.allbub .bub40 {
+  position: absolute;
+  left: 24.1219406502%;
+  top: 50.0032618327%;
+  animation-delay: -80s;
+}
+
+@keyframes back {
+  0% {
+    background-color: #e5b372;
+  }
+  45% {
+    background-color: #d3a2d0;
+  }
+  70% {
+    background-color: #87edeb;
+  }
+  100% {
+    background-color: #e4e5a0;
+  }
+}
+.allbub {
+  animation: back 20s infinite;
+}
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+.TOP {
+  animation-name: title;
+  animation-duration: 1.5s;
+}
